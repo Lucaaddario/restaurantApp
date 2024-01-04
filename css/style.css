@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Times, serif;
+}
+
+body{
+    padding: 4px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.288) , rgba(0, 0, 0, 0.575)) ,  url('/wp1874179.jpg');
+}
+
+
+
+header>h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section#info-w{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 6px 10px;
+    border: 1px solid black;
+}
+
+span#numero-persone{
+    margin-right: 0px;
+}
+span#tavolo-selezionato{
+    margin-left: 10px;
+}
+a , a:hover{
+    text-decoration: none;
+    color: inherit;
+    margin: 0px 3px;
+}
+
+
+
+.btn.prenota{
+    border: none;
+    padding: 2px 12px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+section#tavoli-w{
+    display:flex;
+    justify-content: space-around;
+    margin: 40px 10px;
+
+}
+
+.tavolo{
+    flex-grow: 1;
+    margin: 0px 10px;
+    height: 100px;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ;
+}
+
+.tavolo.libero{
+    background-color: rgb(18, 165, 18);
+}
+
+.tavolo.libero:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.tavolo.occupato{
+    background-color: rgb(214, 19, 19);
+}
+.tavolo.x6{
+    flex-grow: 1.5;
+}
+
+
+
+.form-item{
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.input{
+border: none;
+border-bottom: 1px solid grey;
+width: 30vw;
+}
+
+.input:placeholder-shown{
+    text-align: center;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+p#message-status{
+    text-align: center;
+    color: white;
+}
